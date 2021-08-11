@@ -1,0 +1,113 @@
+/* LOGIN */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+  background-color: #1d1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > section{
+  width: 500px;
+  height: 450px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
+  border: 2px solid rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main > section > form{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+}
+
+main > section > form > input{
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, .3);
+  background-color: #1d1c1c;
+  outline: 0;
+  height: 30px;
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+main > section > form > input:hover{
+  border-bottom: 2px solid green;
+}
+
+main > section > form > input[type = "password"]{
+  margin-top: 20px;
+}
+
+main > section > form > input[placeholder]{
+  color: #fff;
+}
+
+main > section > form > input[placeholder]:hover{
+  color: rgba(255, 255, 255, .5);
+}
+
+main > section > form > button{
+  background-color: green;
+  border: 0;
+  height: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: opacity .5s;
+}
+
+main > section > form > button:hover{
+  opacity: .8;
+}
+
+main > section > span{
+  width: 90%;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, .6);
+  font-size: 12px;
+  text-align: right;
+}
+
+main > section > span > a{
+  color: #ccc;
+}
+
+main > section > span > a:hover{
+  color: #ccc;
+  text-decoration: none;
+}
+
+main > section > div.img{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+
+}
+
+main > section > div.img > img{
+  width: 100%;
+  opacity: .2;
+}
+
+@media (max-width: 700px){
+  main > section{
+    width: 90%;
+  }
+}

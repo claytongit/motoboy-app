@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	background-color: #1d1c1c;
+}
+
+
+header{
+	width: 100%;
+}
+
+header > section > a{
+	height: 60px;
+	width: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+	color: rgba(255,255,255,.5);
+	font-size: 20px;
+}
+
+header > section > a:hover{
+	color: rgba(255,255,255,.4);
+}
+
+
+main > section > form > div{
+	display: flex;
+	flex-direction: column;
+}
+
+main > section > form > div > label{
+	color: rgba(255,255,255,.4);
+	margin-top: 10px;
+}
+
+main > section > form > div > input{
+	border: 1px solid rgba(255,255,255,.4);
+	background: transparent;
+	outline: none;
+	color: rgba(255,255,255,.4);
+	padding: 10px 5px;
+	-moz-appearance: textfield;
+   	appearance: textfie
+}
+
+main > section > form > input[type = 'submit']{
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 0;
+	background-color: #262493;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgba(255,255,255,.4);
+}
+
+main > section > form > input[type = 'submit']:hover{
+	opacity: .9;
+}
+
+
+main > section > form > #fechar{
+	width: 100%;
+	margin-top: 50px;
+	padding: 10px 0;
+	background-color: #262493;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgba(255,255,255,.4);
+}
+
+#img{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: .2;
+}
+
+#img > img{
+	width: 400px;
+	margin: 0 auto;
+}
+
+
+main > section > form > div > label.error{
+	color: red;
+	font-size: 14px;
+}
